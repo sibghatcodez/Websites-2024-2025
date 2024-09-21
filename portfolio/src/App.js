@@ -9,13 +9,13 @@ function App() {
         <p id="craft">GAME DEVELOPER</p>
         <h2 id='me'>I'm Sibghat Baloch</h2>
         <div className="buttons">
-          <button id="about_me">MORE ABOUT ME</button>
+          <button id="about_me">PORTFOLIO</button>
           <button id="hire_me">HIRE ME</button>
         </div>
       </div>
-      <div className="image">
+      {/* <div className="image">
         <img src={Sibs} alt="My_Picture" />
-      </div>
+      </div> */}
     </div>
   );
 }
