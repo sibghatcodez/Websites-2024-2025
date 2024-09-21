@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+.container .info {
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #E9EFEC;
+}
+.container .info #craft {
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #FABC3F;
+  font-size: larger;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.801);
+}
+.container .info #me {
+  font-family: "Anton", sans-serif;
+  font-size: 7vh;
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.849);
+}
+.container .info .buttons button {
+  margin: 0 3px;
+}
+.container .info #about_me {
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #FABC3F;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.container .info #about_me:hover {
+  transform: translateY(6px);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.container .info #hire_me {
+  padding: 10px;
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: #185519;
+  color: whitesmoke;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+.container .info #hire_me:hover {
+  transform: translateY(-8px);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.container .image {
+  height: 100%;
+  width: 50%;
+  background-color: #125B9A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .image img {
+  height: auto;
+  width: 50%;
+}
