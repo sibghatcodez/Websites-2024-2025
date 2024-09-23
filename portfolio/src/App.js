@@ -1,9 +1,11 @@
 import './App.css';
 import CV from './WebCV.png';
-import WEBSITES from './WEBSITES.jpg'
-import SibghatIdeas from './WebsitesPictures/sibghatIdeas.jpg';
+import SibghatIdeas from './WebsitesPictures/SibghatIdeas.jpg';
+import BalochSquad from './WebsitesPictures/BalochSquad.png';
 
 function App() {
+
+
   return (
     <div className="main">
       <div className="container">
@@ -30,16 +32,16 @@ function App() {
 
             <h1>SIBGHAT IDEAS</h1>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio ad deleniti saepe enim perspiciatis necessitatibus cupiditate ratione! Asperiores officiis tenetur dolore expedita consequatur minima explicabo provident recusandae vero accusantium! lorem0500</p>
+            <p>SibghatIdeas is a learning platform designed to teach HTML in Urdu, making it easier for students to grasp web development concepts. It simplifies English documentation into an accessible format for everyone.</p>
 
 
             <div className="control">
 
-              <button className="btn">
+              <button className="btn"><a href="https://sibghatideas.netlify.app/" target="_blank">
                 <span className="price">WEB</span>
                 <span className="shopping-cart"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
                 <span className="buy">REDIRECT</span>
-              </button>
+                </a></button>
 
             </div>
 
@@ -64,25 +66,24 @@ function App() {
           </div>
         </div>
 
-      </div>
-      <div className="portfolio">
+
 
 <div id="container">
 
   <div className="product-details">
 
-    <h1>SIBGHAT IDEAS</h1>
+    <h1>BALOCH SQUAD</h1>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum optio ad deleniti saepe enim perspiciatis necessitatibus cupiditate ratione! Asperiores officiis tenetur dolore expedita consequatur minima explicabo provident recusandae vero accusantium! lorem0500</p>
+    <p>BalochSquad is a platform where we document our cricket matches. From match locations and dates to overs, scores, and wickets, we keep track of every detail as we compete with other teams.</p>
 
 
     <div className="control">
 
-      <button className="btn">
+      <button className="btn"><a href="https://balochsquad.netlify.app/" target="_blank">
         <span className="price">WEB</span>
         <span className="shopping-cart"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
         <span className="buy">REDIRECT</span>
-      </button>
+        </a></button>
 
     </div>
 
@@ -90,7 +91,7 @@ function App() {
 
   <div className="product-image">
 
-    <img src={SibghatIdeas} alt=""/>
+    <img src={BalochSquad} alt=""/>
 
 
       <div className="information">
@@ -101,6 +102,7 @@ function App() {
           <li><strong>HTML</strong></li>
           <li><strong>REACT</strong></li>
           <li><strong>REDUX</strong></li>
+          <li><strong>FIREBASE</strong></li>
 
         </ul>
       </div>
@@ -109,8 +111,6 @@ function App() {
 </div>
 
 </div>
-
-
     </div>
   );
 }
