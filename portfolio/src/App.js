@@ -5,8 +5,30 @@ import BalochSquad from './WebsitesPictures/BalochSquad.png';
 
 function App() {
 
-
+  const websiteArray = [
+    {
+      name: "Sibghat Ideas",
+      link: "https://sibghatideas.netlify.app/",
+      image: require('./WebsitesPictures/SibghatIdeas.jpg'),
+      introduction: "SibghatIdeas is a learning platform designed to teach HTML in Urdu, making it easier for students to grasp web development concepts. It simplifies English documentation into an accessible format for everyone.",
+      technologies: "HTML, CSS, REACT, JAVASCRIPT",
+    },
+    {
+      name: "Baloch Squad",
+      link: "https://balochsquad.netlify.app/",
+      image: require('./WebsitesPictures/BalochSquad.png'),
+      introduction: "BalochSquad is a platform where we document our cricket matches. From match locations and dates to overs, scores, and wickets, we keep track of every detail as we compete with other teams.",
+      technologies: "HTML, CSS, REACT, JAVASCRIPT, REDUX, FIREBASE",
+    }
+  ]
+  function getList(website) {
+    return websiteArray[website].technologies.split(",");
+  }
   return (
+    // everything will be inside the main class.
+    //container only contains of two front pages.
+    //portfolio class is to showcase websites and games made.
+    //construction
     <div className="main">
       <div className="container">
 
@@ -24,93 +46,46 @@ function App() {
         </div>
       </div>
 
+      <h1 id="WebsiteHeading">WEBSITES THAT I MADE</h1>
       <div className="portfolio">
-
+        
         <div id="container">
 
-          <div className="product-details">
+          <div className="website-details">
 
-            <h1>SIBGHAT IDEAS</h1>
+            <h1>{websiteArray[0].name}</h1>
 
-            <p>SibghatIdeas is a learning platform designed to teach HTML in Urdu, making it easier for students to grasp web development concepts. It simplifies English documentation into an accessible format for everyone.</p>
+            <p>{websiteArray[0].introduction}</p>
 
 
             <div className="control">
 
-              <button className="btn"><a href="https://sibghatideas.netlify.app/" target="_blank">
-                <span className="price">WEB</span>
-                <span className="shopping-cart"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
-                <span className="buy">REDIRECT</span>
-                </a></button>
+              <button className="btn"><a href={websiteArray[0].link} target="_blank">
+                <span className="tag">WEB</span>
+                <span className="redirect"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
+                <span className="redirect-btn">REDIRECT</span>
+              </a></button>
 
             </div>
 
           </div>
 
-          <div className="product-image">
+          <div className="website-image">
 
-            <img src={SibghatIdeas} alt=""/>
+            <img src={websiteArray[0].image} alt=""/>
 
 
-              <div className="information">
-                <h2> TECHNOLOGIES</h2>
-                <ul>
-                  <li><strong>JAVASCRIPT  </strong> </li>
-                  <li><strong>HTML  </strong></li>
-                  <li><strong>CSS </strong></li>
-                  <li><strong>REACT </strong></li>
-
-                </ul>
-              </div>
-
+            <div className="information">
+              <h2> TECHNOLOGIES</h2>
+              <ul>
+        {getList(0).map((tech, index) => (
+          <li key={index}><strong>{tech.trim()}</strong></li>
+        ))}
+      </ul>
+            </div>
           </div>
         </div>
-
-
-
-<div id="container">
-
-  <div className="product-details">
-
-    <h1>BALOCH SQUAD</h1>
-
-    <p>BalochSquad is a platform where we document our cricket matches. From match locations and dates to overs, scores, and wickets, we keep track of every detail as we compete with other teams.</p>
-
-
-    <div className="control">
-
-      <button className="btn"><a href="https://balochsquad.netlify.app/" target="_blank">
-        <span className="price">WEB</span>
-        <span className="shopping-cart"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
-        <span className="buy">REDIRECT</span>
-        </a></button>
-
-    </div>
-
-  </div>
-
-  <div className="product-image">
-
-    <img src={BalochSquad} alt=""/>
-
-
-      <div className="information">
-        <h2> TECHNOLOGIES</h2>
-        <ul>
-          <li><strong>JAVASCRIPT</strong></li>
-          <li><strong>CSS</strong></li>
-          <li><strong>HTML</strong></li>
-          <li><strong>REACT</strong></li>
-          <li><strong>REDUX</strong></li>
-          <li><strong>FIREBASE</strong></li>
-
-        </ul>
       </div>
-
-  </div>
-</div>
-
-</div>
     </div>
   );
 }
