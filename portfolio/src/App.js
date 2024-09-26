@@ -48,40 +48,79 @@ function App() {
 
       <h1 id="WebsiteHeading">WEBSITES THAT I MADE</h1>
       <div className="portfolio">
-        
+
         <div id="container">
 
           <div className="website-details">
 
-            <h1>{websiteArray[0].name}</h1>
+            <h1>Sibghat Ideas</h1>
 
-            <p>{websiteArray[0].introduction}</p>
+            <p>SibghatIdeas is a learning platform designed to teach HTML in Urdu, making it easier for students to grasp web development concepts. It simplifies English documentation into an accessible format for everyone.</p>
 
 
             <div className="control">
 
-              <button className="btn"><a href={websiteArray[0].link} target="_blank">
+              <button className="btn"><a href="https://sibghatideas.netlify.app/" target="_blank">
                 <span className="tag">WEB</span>
                 <span className="redirect"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
                 <span className="redirect-btn">REDIRECT</span>
               </a></button>
 
             </div>
-
           </div>
 
           <div className="website-image">
 
-            <img src={websiteArray[0].image} alt=""/>
+            <img src={SibghatIdeas} alt="" />
 
 
             <div className="information">
               <h2> TECHNOLOGIES</h2>
               <ul>
-        {getList(0).map((tech, index) => (
-          <li key={index}><strong>{tech.trim()}</strong></li>
-        ))}
-      </ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>REACT</li>
+                <li>JAVASCRIPT</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div id="container">
+
+          <div className="website-details">
+
+            <h1>Baloch Squad</h1>
+
+            <p>BalochSquad is a platform where we document our cricket matches. From match locations and dates to overs, scores, and wickets, we keep track of every detail as we compete with other teams.</p>
+
+
+            <div className="control">
+
+              <button className="btn"><a href="https://balochsquad.netlify.app/" target="_blank">
+                <span className="tag">WEB</span>
+                <span className="redirect"><i className="fa fa-arrow-right" aria-hidden="true"></i></span>
+                <span className="redirect-btn">REDIRECT</span>
+              </a></button>
+
+            </div>
+          </div>
+
+          <div className="website-image">
+
+            <img src={BalochSquad} alt="" />
+
+
+            <div className="information">
+              <h2> TECHNOLOGIES</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>REACT</li>
+                <li>JAVASCRIPT</li>
+                <li>FIREBASE</li>
+                <li>REDUX</li>
+              </ul>
             </div>
           </div>
         </div>
