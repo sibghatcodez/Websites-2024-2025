@@ -173,6 +173,14 @@ a {
     padding: 8px;
     font-size: 1.4rem;
   }
+   img{ 
+  height: 200px !important;
+  width: 350px !important;
+  }
+  #container {
+    width: 80% !important;
+    height: 60% !important;
+  }
 }
 
 
@@ -324,7 +332,7 @@ a {
 @media (max-width: 768px) {
   #container {
     width: 90%;
-    height: auto;
+    height: 60%;
     margin: 3em auto;
   }
 
@@ -341,7 +349,7 @@ a {
 @media (max-width: 576px) {
   #container {
     width: 100%;
-    height: auto;
+    height: 60%;
   }
   
   .website-details {
