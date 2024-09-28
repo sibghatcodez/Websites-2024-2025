@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c2fef253.css",
+    "main.js": "/static/js/main.31ab6bc2.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/BalochSquad.png": "/static/media/BalochSquad.cc1b0aa7302cc0dfb01c.png",
+    "static/media/WebCV.png": "/static/media/WebCV.4d8eefc1710330423b28.png",
+    "static/media/SibghatIdeas.jpg": "/static/media/SibghatIdeas.59f32f21f43161abfc82.jpg",
+    "index.html": "/index.html",
+    "main.c2fef253.css.map": "/static/css/main.c2fef253.css.map",
+    "main.31ab6bc2.js.map": "/static/js/main.31ab6bc2.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2fef253.css",
+    "static/js/main.31ab6bc2.js"
+  ]
+}
