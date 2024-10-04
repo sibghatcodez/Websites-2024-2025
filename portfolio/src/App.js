@@ -1,7 +1,5 @@
 import './App.css';
 import CV from './WebCV.png';
-import SibghatIdeas from './WebsitesPictures/SibghatIdeas.jpg';
-import BalochSquad from './WebsitesPictures/BalochSquad.png';
 
 function App() {
 
